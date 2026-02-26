@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Environment
+.env
+.venv/
+env/
+venv/
+
+# Conda
+*.conda
+*.condarc
+
+# Anaconda / virtual env
+*.bak
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Data / cache files
+*.csv
+*.xlsx
+*.db
+*.sqlite
+*.pkl
+
+# Snowflake config
+snowflake_*.json
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Streamlit / dashboard cache
+.streamlit/
