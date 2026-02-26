@@ -1,44 +1,58 @@
-# Insurance Geo AI Project 🌍📊
+# Insurance Geo-AI Intelligence
 
-> Predictive and geospatial intelligence for insurance client expansion.
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
----
+## 🌍 Project Overview
 
-## Overview
+This project demonstrates a **geospatial AI solution** for the insurance industry. It combines client data, demographics, and geospatial information to:
 
-This project leverages **Snowflake**, **AWS S3**, **Python**, and **AI/ML** to analyze insurance client data, identify high-potential leads, and suggest optimal branch locations. It features:
+1. Detect potential client leads
+2. Suggest optimal branch locations
+3. Score regions for business opportunity
+4. Provide interactive map visualizations
 
-- Clustering clients based on geolocation
-- Opportunity scoring using income, population density, and growth
-- Interactive geospatial maps with Folium
-- AI forecasting and propensity scoring for leads
-- Dashboards built with **Streamlit**
-
----
-
-## Features
-
-1. **Client Geo Analysis** – See where clients are located.
-2. **Branch Recommendations** – Optimal branch locations based on clusters.
-3. **Opportunity Scoring** – Weighted scoring for prioritizing leads.
-4. **Interactive Map** – Heatmaps and markers for clients and suggested branches.
-5. **AI Forecasting** – Predicts potential leads in each cluster.
+The project leverages **Snowflake**, **Python**, **Folium**, and **AI scoring models** to create a fully interactive geospatial intelligence dashboard.
 
 ---
 
-## Tech Stack
+## 🧰 Features
 
-- **Database:** Snowflake  
-- **Cloud Storage:** AWS S3  
-- **Python Libraries:** pandas, numpy, sklearn, folium, streamlit, SQLAlchemy  
-- **Visualization:** Interactive Folium maps, Streamlit dashboards  
-- **Version Control:** GitHub  
+### 1. Data Integration
+
+- Clients, demographics, and geospatial reference data
+- Snowflake data warehouse for centralized storage
+- Python scripts for loading, processing, and enriching data
+
+### 2. AI Opportunity Scoring
+
+- Weighted scoring using:
+  - Average monthly income  
+  - Population density  
+  - Annual growth rate  
+- Scores highlight high-potential regions for new clients
+
+### 3. Clustering & Branch Suggestion
+
+- K-means clustering to group clients by location
+- Suggested branch locations calculated from cluster centroids
+- Branch scoring indicates potential client reach
+
+### 4. Interactive Map Visualization
+
+- Folium heatmap of client opportunity scores
+- Colored markers for clusters (green: high, orange: medium, red: low)
+- Branch locations highlighted with markers
+- Popups provide client and cluster details
+- Legend and table for clear interpretation
+
+**Live Map Demo:** [View Here](https://Zaya267.github.io/Insurance-Geo/)
 
 ---
 
-## Setup Instructions
+## 💻 Installation & Setup
 
-1. Clone repo:
+1. Clone the repository:
+
 ```bash
 git clone https://github.com/Zaya267/Insurance-Geo.git
 cd Insurance-Geo
