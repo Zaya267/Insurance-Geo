@@ -2,6 +2,8 @@
 
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
+---
+
 ## 🌍 Project Overview
 
 This project demonstrates a **geospatial AI solution** for the insurance industry. It combines client data, demographics, and geospatial information to:
@@ -12,8 +14,6 @@ This project demonstrates a **geospatial AI solution** for the insurance industr
 4. Provide interactive map visualizations  
 
 The project leverages **Snowflake**, **Python**, **Folium**, and **AI scoring models** to create a fully interactive geospatial intelligence dashboard.
-
-**Live Map Demo:** [View Here](https://Zaya267.github.io/Insurance-Geo/)
 
 ---
 
@@ -27,7 +27,7 @@ The project leverages **Snowflake**, **Python**, **Folium**, and **AI scoring mo
 
 ### 2. AI Opportunity Scoring
 
-- Weighted scoring using:
+- Weighted scoring using:  
   - Average monthly income  
   - Population density  
   - Annual growth rate  
@@ -47,32 +47,11 @@ The project leverages **Snowflake**, **Python**, **Folium**, and **AI scoring mo
 - Popups provide client and cluster details  
 - Legend and table for clear interpretation  
 
----
+**Live Map Demo:**  
 
-## 🛠 Tech Stack
-
-- **Languages:** Python 3.10  
-- **Libraries:** pandas, numpy, scikit-learn, folium, streamlit  
-- **Database:** Snowflake  
-- **Environment:** Anaconda for dependency management  
-- **Version Control:** Git & GitHub  
-
----
-
-## 📂 Repository Structure
-
-Insurance-Geo/
-│
-├── data/ # Sample CSVs (no sensitive info)
-├── scripts/ # Python scripts
-│ ├── insurance_map.py
-│ └── insurance_dashboard.py
-├── notebooks/ # Exploratory analysis notebooks
-├── outputs/ # Maps, dashboards, plots
-├── README.md # Project overview
-├── requirements.txt # Python dependencies
-└── .gitignore # Excluded files
-
+- [Insurance Intelligence Map](https://zaya267.github.io/Insurance-Geo/maps/insurance_intelligence_map.html)  
+- [Insurance AI Map](https://zaya267.github.io/Insurance-Geo/maps/insurance_ai_map.html)  
+- [Insurance Map](https://zaya267.github.io/Insurance-Geo/maps/insurance_map.html)  
 
 ---
 
@@ -84,12 +63,37 @@ Insurance-Geo/
 git clone https://github.com/Zaya267/Insurance-Geo.git
 cd Insurance-Geo
 
+
+Create and activate a Python environment:
 conda create -n snowgeo python=3.10 -y
 conda activate snowgeo
 
-conda create -n snowgeo python=3.10 -y
-conda activate snowgeo
 
-python scripts/insurance_map.py
+Install required Python packages:
+pip install -r requirements.txt
 
-streamlit run scripts/insurance_dashboard.py
+
+Run scripts locally:
+
+python insurance_map.py
+streamlit run insurance_dashboard.py
+
+
+📁 Repository Structure
+
+Insurance-Geo/
+│
+├─ maps/                        # All interactive HTML map files
+│   ├─ insurance_ai_map.html
+│   ├─ insurance_intelligence_map.html
+│   └─ insurance_map.html
+│
+├─ assets/                      # CSS, JS, and other visual assets
+├─ insurance_map.py              # Data processing & map generation
+├─ insurance_dashboard.py        # Streamlit dashboard
+├─ README.md
+├─ requirements.txt
+└─ .nojekyll                     # Required for GitHub Pages deployment
+
+
+
